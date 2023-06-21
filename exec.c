@@ -13,13 +13,14 @@ void exec_instruction(char *opcode, stack_t **stack, unsigned int line_number)
 	instruction_t instructions[] = {
 		{"push", push},
 		{"pall", pall},
-		{NULL, NULL}};
                 {"pint", pint},
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
+		{NULL, NULL}};
+
 	int i = 0;
 
 	while (instructions[i].opcode)
