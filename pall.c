@@ -12,7 +12,7 @@
  */
 void pall(stack_t **stack, unsigned int line_number)
 {
-	/* Print all the values on the stack, starting from the top*/
+	/* Print all the values on the stack, starting from the top */
 	stack_t *current;
 
 	(void)line_number;
@@ -24,3 +24,4 @@ void pall(stack_t **stack, unsigned int line_number)
 		current = current->next;
 	}
 }
+
